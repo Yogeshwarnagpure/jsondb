@@ -1,0 +1,192 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "e60b30fe-e170-4dd5-a59c-28c5609b76fa",
+        "name": "JPDB_YN"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Service",
+            "id": "94b9bb95-d338-41d3-8024-c6a452f714e5",
+            "name": "CRUD"
+          },
+          "children": [
+            {
+              "entity": {
+                "type": "Scenario",
+                "id": "fc70e4f7-812e-46ff-b50f-a871ea6470fc",
+                "name": "Scenario 1"
+              },
+              "children": [
+                {
+                  "entity": {
+                    "type": "Request",
+                    "method": {
+                      "requestBody": true,
+                      "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                      "name": "POST"
+                    },
+                    "body": {
+                      "formBody": {
+                        "overrideContentType": true,
+                        "encoding": "application/x-www-form-urlencoded",
+                        "items": []
+                      },
+                      "bodyType": "Text",
+                      "textBody": "{\n    \"token\": \"90932595|-31949277681552413|90948979\",\n    \"cmd\": \"PUT_ALL\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"index\",\n    \"templateStr\": {},\n    \"colsAutoIndex\": true,\n    \"jsonStr\": [\n        {\n            \"name\": \"Pranitha\",\n            \"email\": \"pranitha@gmail.com\",\n            \"password\": \"3293\",\n            \"passwrd\": \"3293\"\n\n        },\n        {\n            \"name\": \"Sarah Khan\",\n            \"email\": \"sarahkhan@gmail.com\",\n            \"password\": \"3823\",\n            \"passwrd\": \"3823\"\n\n        },\n        {\n            \"name\": \"Akhil\",\n            \"email\": \"akhil81@gmail.com\",\n            \"password\": \"3273\",\n            \"passwrd\": \"3273\"\n\n        }\n    ]\n}\n"
+                    },
+                    "uri": {
+                      "query": {
+                        "delimiter": "&",
+                        "items": []
+                      },
+                      "scheme": {
+                        "name": "http",
+                        "version": "V11"
+                      },
+                      "host": "api.login2explore.com:5577",
+                      "path": "/api/iml"
+                    },
+                    "id": "49675738-50be-4afd-9d1d-3ffb75e55de7",
+                    "name": "POST",
+                    "headers": [
+                      {
+                        "enabled": true,
+                        "name": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "entity": {
+                    "type": "Request",
+                    "method": {
+                      "requestBody": true,
+                      "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                      "name": "POST"
+                    },
+                    "body": {
+                      "formBody": {
+                        "overrideContentType": true,
+                        "encoding": "application/x-www-form-urlencoded",
+                        "items": []
+                      },
+                      "bodyType": "Text",
+                      "textBody": "{\n    \"token\": \"90932595|-31949277681552413|90948979\",\n    \"cmd\": \"GET\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"Emp-Rel\",\n    \"jsonStr\":{\n        \"name\": \"Yogeshwar\"\n    }\n}\n"
+                    },
+                    "uri": {
+                      "query": {
+                        "delimiter": "&",
+                        "items": []
+                      },
+                      "scheme": {
+                        "name": "http",
+                        "version": "V11"
+                      },
+                      "host": "api.login2explore.com:5577",
+                      "path": "/api/irl"
+                    },
+                    "id": "231afd46-a56d-4f33-bea4-a374460db62d",
+                    "name": "GET",
+                    "headers": [
+                      {
+                        "enabled": true,
+                        "name": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "entity": {
+                    "type": "Request",
+                    "method": {
+                      "requestBody": true,
+                      "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                      "name": "POST"
+                    },
+                    "body": {
+                      "formBody": {
+                        "overrideContentType": true,
+                        "encoding": "application/x-www-form-urlencoded",
+                        "items": []
+                      },
+                      "bodyType": "Text",
+                      "textBody": "{\n    \"token\": \"90932595|-31949277681552413|90948979\",\n    \"cmd\": \"UPDATE\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"Emp-Rel\",\n    \"jsonStr\":{\n      \"1\": {\"name\": \"Yogesh\"},\n      \"2\": {\"mobileno\": 1234567890}\n    }\n}\n"
+                    },
+                    "uri": {
+                      "query": {
+                        "delimiter": "&",
+                        "items": []
+                      },
+                      "scheme": {
+                        "name": "http",
+                        "version": "V11"
+                      },
+                      "host": "api.login2explore.com:5577",
+                      "path": "/api/iml"
+                    },
+                    "id": "7a158822-4f5d-4563-a8a1-e9d7a541a7f6",
+                    "name": "UPDATE",
+                    "headers": [
+                      {
+                        "enabled": true,
+                        "name": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "entity": {
+                    "type": "Request",
+                    "method": {
+                      "requestBody": true,
+                      "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                      "name": "POST"
+                    },
+                    "body": {
+                      "formBody": {
+                        "overrideContentType": true,
+                        "encoding": "application/x-www-form-urlencoded",
+                        "items": []
+                      },
+                      "bodyType": "Text",
+                      "textBody": "{\n    \"token\": \"90932595|-31949277681552413|90948979\",\n    \"cmd\": \"REMOVE\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"Emp-Rel\",\n  \t\"record\": 3\n}"
+                    },
+                    "uri": {
+                      "query": {
+                        "delimiter": "&",
+                        "items": []
+                      },
+                      "scheme": {
+                        "name": "http",
+                        "version": "V11"
+                      },
+                      "host": "api.login2explore.com:5577",
+                      "path": "/api/iml"
+                    },
+                    "id": "3483d081-54ff-43be-9e5b-9490c12de558",
+                    "name": "DELETE",
+                    "headers": [
+                      {
+                        "enabled": true,
+                        "name": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
